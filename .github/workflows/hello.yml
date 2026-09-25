@@ -1,4 +1,4 @@
-name: 'Print detail'
+name: Talking to someone
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - name: 'SAy welcom'
-        run: echo "Hello rahul kaise how'
-      - name: ' say Thank you'
-        run: echo 'Thanky ramesh'
+      - name: say wish
+        run: echo "Hello rahul kaise how"
+      - name: okay by by
+        run: echo "Thanky ramesh"
