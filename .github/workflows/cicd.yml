@@ -1,0 +1,31 @@
+name: CICD
+'on':
+  push:
+    branches:
+      - main
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check code
+        run: echo "Checkout the code from repo"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "Test the code"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: Docker build
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: push
+        run: echo "Push to the docker hub"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        run: echo "deployed on the production"
