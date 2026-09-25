@@ -19,8 +19,7 @@ jobs:
   seeyou:
     runs-on: ubuntu-latest
     needs: 
-      - greet
-      - okby
+      - greet 
     
     steps:
       - name: tata
