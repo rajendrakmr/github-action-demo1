@@ -2,6 +2,14 @@ name: Hello
 
 on:
   workflow_dispatch: 
+    inputs:
+      enviroments:
+        description: this is enviroment value where workflow will run
+        type: choice
+        options:
+          - dev
+          - prd
+          - stg
 
 jobs:
   greet:
