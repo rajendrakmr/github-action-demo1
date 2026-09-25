@@ -11,3 +11,8 @@ jobs:
         run: echo "Hello rahul kaise how"
       - name: okay by by
         run: echo "Thanky ramesh"
+  okby:
+    runs-on: ubuntu-latest
+    steps:
+      - name: kal miloge
+        run: echo "rahul kal miloge na?"
