@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'SAy welcom'
-        run: echo " Hi, rahul welcome'
+        run: echo "Hello rahul kaise how'
       - name: ' say Thank you'
         run: echo 'Thanky ramesh'
