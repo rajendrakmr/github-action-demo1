@@ -11,21 +11,28 @@ jobs:
         run: echo "Checkout the code from repo"
   test:
     runs-on: ubuntu-latest
+    needs: code
     steps:
       - name: test
         run: echo "Test the code"
   build:
     runs-on: ubuntu-latest
+    needs: 
+      - code
+      - test
     steps:
       - name: build
         run: echo "Docker build"
   push:
     runs-on: ubuntu-latest
+    needs:
+      - build
     steps:
       - name: push
         run: echo "Push to the docker hub"
   deploy:
     runs-on: ubuntu-latest
+    needs: push
     steps:
       - name: deploy
         run: echo "deployed on the production"
