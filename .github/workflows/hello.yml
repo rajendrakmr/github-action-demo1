@@ -1,0 +1,13 @@
+name: 'Print detail'
+on:
+  push:
+    branches: [main]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'SAy welcom'
+        run: echo " Hi, rahul welcome'
+      - name: ' say Thank you'
+        run: echo 'Thanky ramesh'
